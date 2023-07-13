@@ -3,13 +3,15 @@
 # It is always log to base 2
 # The provided list should always be sorted
 # * is the number of steps it will take the binary search algo
+# Big O notation lets you compare the number of operations. It tells you how fast the algorithm grows.
 
 def binary_search(list, item):
-    low = 0
+    # set boundaries
+    low = 0 
     high = len(list) - 1
 
     while low <= high:
-        mid = int((high + low) / 2)
+        mid = int((low + high) / 2)
         guess = list[mid]
 
         if guess == item:
@@ -24,4 +26,7 @@ def binary_search(list, item):
 
 my_list = [1, 2, 3, 4, 7, 9]
 
-print(binary_search(my_list, 5))
+print(binary_search(my_list, 4))
+
+# Binary search is O(logn)
+# The travelling sales man problem has run time of O(n!)
