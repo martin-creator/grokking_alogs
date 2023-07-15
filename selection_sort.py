@@ -54,6 +54,5 @@ def binary_search(list, item):
 
 print("------------------Selection Sort -------------------")
 print(selectionSort(testArr))
-bin
 print("------------------Binary Sort -------------------")
 print(binary_search(binArr, 9))
