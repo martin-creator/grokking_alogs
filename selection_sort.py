@@ -2,7 +2,7 @@
 # it has O(n^2)
 
 testArr = [5, 3, 6, 2, 10, 100, 50, 4000, 5000 ]
-binArr = [5, 3, 6, 2, 10, 100, 50, 4000, 5000 ]
+binArr = [1, 2, 3, 4, 7, 9]
 
 def findSmallest(arr):
     smallest = arr[0]
@@ -54,5 +54,6 @@ def binary_search(list, item):
 
 print("------------------Selection Sort -------------------")
 print(selectionSort(testArr))
+bin
 print("------------------Binary Sort -------------------")
-print(binary_search(binArr,5))
+print(binary_search(binArr, 9))
