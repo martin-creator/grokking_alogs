@@ -16,7 +16,7 @@ def findSmallest(arr):
     return smallest_index
 
 
-
+# Sorting algorithm
 def selectionSort(arr):
     sortedArr =  []
 
@@ -27,7 +27,7 @@ def selectionSort(arr):
     return sortedArr
 
 
-# Implement a binary search algorithm
+# Implement a binary search algorithm --> Search Algorith
 
 def binary_search(list, item):
     # the list must be sorted
