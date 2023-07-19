@@ -62,3 +62,39 @@ def count(arr):
 # we begin adding from one because we are counting the first item in the list
 
 print(count([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
+
+
+# Example 6 Find the max number in a list
+
+def max(arr):
+    # establish base case
+    if len(arr) == 2:
+        return arr[0] if arr[0] > arr[1] else arr[1]
+    else:
+        sub_max = max(arr[1:]) # sub_max is the max of the sub array
+        return arr[0] if arr[0] > sub_max else sub_max
+
+print (max([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
+
+
+
+# Visualizing Recursion
+
+# max([4, 8, 2, 10, 6])
+# |
+# |--> max([8, 2, 10, 6])
+# |    |
+# |    |--> max([2, 10, 6])
+# |    |    |
+# |    |    |--> max([10, 6])
+# |    |    |    |
+# |    |    |    |--> max([6]) -> returns 6 (base case)
+# |    |    |
+# |    |    |--> Returns max(10, 6) -> returns 10
+# |    |
+# |    |--> Returns max(8, 10) -> returns 10
+# |
+# |--> Returns max(4, 10) -> returns 10
+
+
+
