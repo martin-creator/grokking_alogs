@@ -30,3 +30,13 @@ print(binary_search(my_list, 4))
 
 # Binary search is O(logn)
 # The travelling sales man problem has run time of O(n!)
+
+
+# Visualize binary search
+# my_list = [1, 2, 3, 4, 7, 9]
+# binary_search(my_list, 3)
+# | low = 0, high = 5, mid = 2, guess = 3
+# | low = 0, high = 1, mid = 0, guess = 1
+# | low = 1, high = 1, mid = 1, guess = 2
+# | low = 2, high = 1, mid = 2, guess = 3
+# | low = 2, high = 1, mid = 2, guess = 3
