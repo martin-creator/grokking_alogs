@@ -46,6 +46,7 @@
 
 # Import the deque class from the collections module
 from collections import deque
+from doctest import Example
 from re import search
 
 graph = {}
@@ -93,5 +94,68 @@ print(search("you")) # Output: thom is a mango seller! True
 # Topological sorting is a way of ordering the nodes in a directed acyclic graph.
 
 
+# Example of a tree
 
+tree = {}
+tree["a"] = ["b", "c", "d"]
+tree["b"] = ["e", "f"]
+tree["c"] = ["g"]
+tree["d"] = ["h", "i"]
+tree["e"] = []
+tree["f"] = []
+tree["g"] = []
+tree["h"] = []
+tree["i"] = []
+print("tree")
+print(tree)
+
+# Example of a graph
+graph = {}
+graph["a"] = ["b", "c", "d"]
+graph["b"] = ["e", "f"]
+graph["c"] = ["g", "h"]
+graph["d"] = ["i", "j"]
+graph["e"] = []
+graph["f"] = []
+graph["g"] = []
+graph["h"] = []
+graph["i"] = []
+graph["j"] = []
+print("graph")
+print(graph)
+
+# Example of a directed graph
+directed_graph = {}
+directed_graph["a"] = ["b", "c", "d"]
+directed_graph["b"] = ["e", "f"]
+directed_graph["c"] = ["g", "h"]
+directed_graph["d"] = ["i", "j"]
+directed_graph["e"] = []
+directed_graph["f"] = []
+directed_graph["g"] = []
+directed_graph["h"] = []
+directed_graph["i"] = []
+directed_graph["j"] = []
+print("directed_graph")
+print(directed_graph)
+
+# Example of a weighted graph
+weighted_graph = {}
+weighted_graph["a"] = {}
+weighted_graph["a"]["b"] = 5
+weighted_graph["a"]["c"] = 2
+weighted_graph["b"] = {}
+weighted_graph["b"]["d"] = 4
+weighted_graph["b"]["e"] = 2
+weighted_graph["c"] = {}
+weighted_graph["c"]["b"] = 8
+weighted_graph["c"]["e"] = 7
+weighted_graph["d"] = {}
+weighted_graph["d"]["e"] = 6
+weighted_graph["d"]["f"] = 3
+weighted_graph["e"] = {}
+weighted_graph["e"]["f"] = 1
+weighted_graph["f"] = {}
+print("weighted_graph")
+print(weighted_graph)
 
