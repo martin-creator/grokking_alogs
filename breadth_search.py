@@ -80,3 +80,18 @@ def search(name):
 
 print(search("you")) # Output: thom is a mango seller! True
 
+# A tree is a special type of graph.
+# A tree is a graph where there are no cycles.
+# A cycle is a path from one node back to itself.
+# A tree is an acyclic graph.
+# A tree is a connected graph.
+# A connected graph is a graph where there is a path from every node to every other node.
+# A tree cannot have more than one root node.
+# A root node is a node that has no parent nodes.
+# A tree cannot have more than one parent node.
+# We can do topological sorting on a tree.
+# Topological sorting is a way of ordering the nodes in a directed acyclic graph.
+
+
+
+
